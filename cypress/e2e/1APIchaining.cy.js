@@ -81,7 +81,7 @@ describe('API Testing ', () => {
                 cy.log("Access Token: " + accessToken);
             });
         }).then(() => {
-            // Step 3: Fetch User Profile using Token
+            // Step 3: Delete User Profile using Token
             cy.request({
                 method: "DELETE",
                 url: `${Url}auth/profile/`, 
